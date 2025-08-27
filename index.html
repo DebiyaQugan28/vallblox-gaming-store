@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALLBLOX - Premium Gaming Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-text">VB</span>
+                </div>
+                <span class="brand-name">VALLBLOX</span>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#transactions">Cek Transaksi</a></li>
+                    <li><a href="#robux">Beli Robux</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button class="btn-login" onclick="openModal('loginModal')">Masuk</button>
+                <button class="btn-register" onclick="openModal('registerModal')">Daftar</button>
+            </div>
+            
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">VALLBLOX - JUAL/BELI AKUN, JOKI, & TOPUP TERPERCAYA</h1>
+                <div class="hero-banner">
+                    <div class="banner-content">
+                        <div class="banner-image">
+                            <div class="roblox-character"></div>
+                        </div>
+                        <div class="banner-text">
+                            <h2>WELCOME TO VALLBLOX</h2>
+                            <p>TOKO ROBLOX TERBESAR DI DUNIA</p>
+                            <div class="trust-indicators">
+                                <div class="indicator">
+                                    <span class="icon">💰</span>
+                                    <span>Harga Termurah</span>
+                                </div>
+                                <div class="indicator">
+                                    <span class="icon">⚡</span>
+                                    <span>Proses Tercepat</span>
+                                </div>
+                                <div class="indicator">
+                                    <span class="icon">🛡️</span>
+                                    <span>Aman 100%</span>
+                                </div>
+                            </div>
+                            <p class="banner-subtitle">PROSES SEMUA KILAT DAN DIPASTIKAN TERMURAH !!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2 class="section-title">!!!INFO PENTING!!!</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span>WA KAMI</span>
+                    <button class="info-btn">Klik disini</button>
+                </div>
+                <div class="info-item">
+                    <span>BLOXFRUIT INDONESIA DISCORD</span>
+                    <button class="info-btn">Klik disini</button>
+                </div>
+                <div class="info-item">
+                    <span>GROW A GARDEN INDONESIA DISCORD</span>
+                    <button class="info-btn">Klik disini</button>
+                </div>
+                <div class="info-item">
+                    <span>SALURAN KAMI</span>
+                    <button class="info-btn">Klik disini</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide active">
+                        <img src="https://exstore.id/storage/carousels/hprUVtNQyeWEEIMI9z1UotFOpUS04AXNBBi89ptc.jpg" alt="Carousel 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://exstore.id/storage/carousels/YDoFLTRhI30g3npiAVPajR1Sj1nWd0o5oq9VCXri.jpg" alt="Carousel 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://exstore.id/storage/carousels/7wuAY3JquFnkMzjBpmGolmCStZJROxGSaegHXoX3.jpg" alt="Carousel 3">
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+                <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Products Section -->
+    <section class="hot-products">
+        <div class="container">
+            <h2 class="section-title">🔥 Terlaris Bulan Ini!!</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://exstore.id/storage/games/wPJToBIYHUdvdQMv7h5zLXDAPpmDeXG4uVqxE2yp.png" alt="PERMANENT DRAGON">
+                    <div class="product-info">
+                        <h3>PERMANENT DRAGON</h3>
+                        <p class="transactions">Transactions: 1,552</p>
+                        <p class="price">Rp 450.000</p>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://exstore.id/storage/games/BjFapO0E1hiQjD1RW1tB1q6Qb5KZ51Lo5RKG8OAr.png" alt="PERMANENT KITSUNE">
+                    <div class="product-info">
+                        <h3>PERMANENT KITSUNE</h3>
+                        <p class="transactions">Transactions: 1,442</p>
+                        <p class="price">Rp 360.000</p>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://exstore.id/storage/games/1XCKOcjLn2bvCaN0enL3i59Mv60WL7E21qAit82J.png" alt="PERMANENT LIGHTNING">
+                    <div class="product-info">
+                        <h3>PERMANENT LIGHTNING</h3>
+                        <p class="transactions">Transactions: 1,410</p>
+                        <p class="price">Rp 189.000</p>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://exstore.id/storage/games/dlW8AQXkQfyTGZ99z0cn8Khv7glInQ3XdMbalwOB.png" alt="PERMANENT BUDDHA">
+                    <div class="product-info">
+                        <h3>PERMANENT BUDDHA</h3>
+                        <p class="transactions">Transactions: 1,523</p>
+                        <p class="price">Rp 148.500</p>
+                        <button class="buy-btn">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-item">
+                    <img src="https://exstore.id/storage/categories/A0N9Fcs8hVZpPo3nq2FznSGlSwUPS8eKEPUZeSxd.png" alt="Blox Fruit">
+                    <span>Blox Fruit</span>
+                </div>
+                <div class="category-item">
+                    <img src="https://exstore.id/storage/categories/HPBjl77wCCB6E5cNKq5AYIocTzwPlYpMSHz7Dcba.png" alt="KING LEGACY">
+                    <span>KING LEGACY</span>
+                </div>
+                <div class="category-item">
+                    <img src="https://exstore.id/storage/categories/q4whPWNVMODAfirKstEyxBLDRIiodjOOW5wyeh6M.png" alt="GROW A GARDEN">
+                    <span>GROW A GARDEN</span>
+                </div>
+                <div class="category-item">
+                    <img src="https://exstore.id/storage/categories/tfdIWIu62uMnj91mLT0ABzX9Ppkk8fcTFNGBUXJf.png" alt="ROBUX">
+                    <span>ROBUX</span>
+                </div>
+                <div class="category-item">
+                    <img src="https://exstore.id/storage/categories/X6P0NDzwlcqkQeLxvQijputK7yeomuaDSOvdOXLg.png" alt="BASKETBALL ZERO">
+                    <span>BASKETBALL ZERO</span>
+                </div>
+                <div class="category-item">
+                    <img src="https://exstore.id/storage/categories/cIXDDipMQ6pujo7GHcYjIV0FWD3vOL8wVPwNOBPp.png" alt="CDID">
+                    <span>CDID</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Welcome Back!</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <button type="submit" class="submit-btn">Sign In</button>
+                <div class="form-links">
+                    <a href="#" onclick="openModal('forgotModal')">Forgot Password?</a>
+                    <p>Don't have an account? <a href="#" onclick="switchModal('loginModal', 'registerModal')">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Create Account</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+                <div class="form-links">
+                    <p>Already have an account? <a href="#" onclick="switchModal('registerModal', 'loginModal')">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgotModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('forgotModal')">&times;</span>
+            <h2>Forgot Password?</h2>
+            <p>No worries, we'll send you reset instructions.</p>
+            <form id="forgotForm">
+                <div class="form-group">
+                    <label for="forgotEmail">Email address</label>
+                    <input type="email" id="forgotEmail" name="email" required>
+                </div>
+                <button type="submit" class="submit-btn">Reset Password</button>
+                <div class="form-links">
+                    <a href="#" onclick="switchModal('forgotModal', 'loginModal')">Back to login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Transaction Check Modal -->
+    <div id="transactionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('transactionModal')">&times;</span>
+            <h2>Cek Status Transaksi</h2>
+            <form id="transactionForm">
+                <div class="form-group">
+                    <label for="transactionId">ID Transaksi</label>
+                    <input type="text" id="transactionId" name="transactionId" required>
+                </div>
+                <button type="submit" class="submit-btn">Cek Status</button>
+            </form>
+            <div id="transactionResult" class="transaction-result"></div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6281234567890" target="_blank">
+            <div class="whatsapp-icon">💬</div>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
